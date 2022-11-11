@@ -1,17 +1,46 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const Book1 = {
+  image: "https://rukminim1.flixcart.com/image/612/612/khxqt8w0-0/book/9/t/k/java-the-complete-reference-eleventh-edition-original-imafxuybqqhdthsc.jpeg?q=70",
+  name: "Java the Complete Reference"
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Book2 = {
+  image: "https://rukminim1.flixcart.com/image/416/416/kjbr8280-0/book/d/d/l/think-java-how-to-think-like-a-computer-scientist-original-imafyxhmzwmqhfby.jpeg?q=70",
+  name: "Think Java How To Think Like A Computer Scientist - How to Think Like a Computer Scientist"
+}
+
+const Index = () => {
+  return (
+    <>
+      <div><h1 className="textCenter"><u>Hello React !! ( Hyder version )</u></h1></div>
+      <Student></Student>
+      <Student />
+      <div className='somedecorations'>
+        <Books image={Book1.image} author={Book1.name} />
+        <Books image={Book2.image} author={Book2.name}></Books>
+      </div>
+    </>
+  );
+}
+
+let Student = () => {
+  return (
+    <h3>Yes, I am a student !!</h3>
+  );
+}
+
+let Books = (pp) => {
+  const { image, author } = pp;
+  return (
+    <>
+      <img src={image} alt="Default image is not here" />
+      <h3>{author}</h3>
+    </>
+  );
+}
+
+
+ReactDOM.render(<Index />, document.getElementById('root'));
