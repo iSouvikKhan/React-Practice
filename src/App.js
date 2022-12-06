@@ -1,12 +1,8 @@
 import './index.css';
 
-// import SetUp from './ShortCircuit';
+// import SetUp from './PropDrilling';
 
-// import SetUp from './ShowHide';
-
-// import SetUp from './ControlledInput';
-
-import SetUp from './UseRefBasics';
+import SetUp from './ContextAPI';
 
 
 function App() {
