@@ -1,8 +1,6 @@
 import './index.css';
 
-// import SetUp from './PropDrilling';
-
-import SetUp from './ContextAPI';
+import SetUp from './Redux';
 
 
 function App() {
