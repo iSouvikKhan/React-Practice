@@ -1,6 +1,6 @@
 import './index.css';
 
-import SetUp from './Redux';
+import SetUp from './ContextAPIConsumer';
 
 
 function App() {

@@ -17,7 +17,7 @@ const Child = (props) => {
     );
 }
 
-const Redux = () => {
+const ContextAPIConsumer = () => {
 
     const [courseName, setCourseName] = useState("React.js");
 
@@ -29,4 +29,4 @@ const Redux = () => {
     );
 }
 
-export default Redux;
+export default ContextAPIConsumer;
