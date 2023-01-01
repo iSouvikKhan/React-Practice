@@ -1,11 +1,9 @@
 import React, { useState, useContext } from 'react'
 import { data } from './data'
 
-//more components 
-//propDrilling-- conntext api -- redux
 
 const PersonContext = React.createContext();
-//two -Provider, Consumer. Here we will only use provider
+// ContextAPI has two parts - Provider, Consumer. Here we will only use provider
 
 // see React documentation
 
@@ -23,17 +21,19 @@ const ContextAPI = () => {
         <PersonContext.Provider value={{ removePerson }}>
             <section>
                 <h3>Context API</h3>
-                <List people={people} />
+                <List people2={people} />
                 {/* to stop drilling u need to remove "removePerson={removePerson}" from this place, see PropDrilling */}
 
             </section>
         </PersonContext.Provider>
     )
 }
-const List = ({ people }) => {
+
+
+const List = ({ people2 }) => {
     return <>
         {
-            people.map((person) => {
+            people2.map((person) => {
                 return (
                     <SinglePerson key={person.id} {...person} />
                 )
@@ -41,6 +41,8 @@ const List = ({ people }) => {
         }
     </>
 }
+
+
 const SinglePerson = ({ id, name }) => {
     const { removePerson } = useContext(PersonContext)
     console.log(data);
