@@ -4,7 +4,7 @@ const GrandChild = (props) => {
     return (
         <>
             <h3>Grand Child Component : </h3>
-            <Child course={props.course} />
+            <Child course2={props.course1} />
         </>
     );
 }
@@ -12,7 +12,7 @@ const GrandChild = (props) => {
 const Child = (props) => {
     return (
         <>
-            <h2>Child Component : {props.course}</h2>
+            <h2>Child Component : {props.course2}</h2>
         </>
     );
 }
@@ -24,7 +24,7 @@ const ContextAPIConsumer = () => {
     return (
         <>
             <h1>iNeuron : </h1>
-            <GrandChild course={courseName} />
+            <GrandChild course1={courseName} />
         </>
     );
 }
