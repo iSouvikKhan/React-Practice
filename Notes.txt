@@ -1,9 +1,11 @@
-Context API :
-    with this, 2 things come into picture, producer and consumer
-    u need to wrap all the things inside the producer
-    through consumer u will be using in the component, where it will be rendered
-    to overcome the concept of PropDrilling, Context API is useful
-
-    if the scenrio is very very complex the Redux can be used
+Navigate replace to="/navigatedcomponent" :
+        --> it should call the "navigatedcomponent" as a separate component
+        --> not as associated with it
 
 
+Link :
+        --> redirects smoothly without refreshing the page
+
+
+Outlet :
+        --> is required for getting the output below the button
